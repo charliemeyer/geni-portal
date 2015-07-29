@@ -40,27 +40,37 @@
 }
 */
 
+#jacksContainer {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
 #jacks-app-div {
     width: 100%;
 }
 
+#jacks-app td {
+  padding: 0px;
+}
+
+
 #jacks-app #jacks-app-container {
-  border: 1px solid #000;
+  /*border: 1px solid #000;*/
   position: relative;
 }
 
 #jacks-app #jacks-status {
   position: absolute;
-  top: 0;
+  top: -35px;
   z-index: 9;
   width: 100%;
-  min-height: 25px;
-  max-height: 25px;
-  padding: 5px;
+  /*padding: 5px;*/
   overflow: hidden;
-  border-bottom: 1px solid #000;
+  /*border-bottom: 1px solid #000;*/
   background: #f5f5f5;
   font-weight: bold;
+  height: 25px;
+  line-height: 25px;
+  vertical-align: middle;
 }
 
 #jacks-app #jacks-status-history {
@@ -72,7 +82,7 @@
   max-height: 25px;
   padding: 5px;
   overflow: hidden;
-  border-bottom: 1px solid #000;
+  /*border-bottom: 1px solid #000;*/
   background: #f5f5f5;
   font-weight: bold;
 }
@@ -105,8 +115,15 @@
 }
 
 #jacks-app #jacks-buttons {
-  border-top: 1px solid #000;
+  /*border-top: 1px solid #000;*/
 }
+
+#jacks-buttons {
+  width: calc(100%-20px);
+  padding: 10px;
+  background-color: #F5F5F5;
+}
+
 
 #jacks-app #jacks-buttons > button {
     padding: 5px;
@@ -148,4 +165,14 @@
 
 #jacks-app .gre-tunnel {
     fill: yellow;
+}
+
+#jacks-app .jacksStatusText {
+  margin: 0px 20px;
+  vertical-align: middle;
+}
+
+#jacks-app #jacks-status p {
+  margin: 0px 20px;
+  vertical-align: middle;
 }

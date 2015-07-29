@@ -234,6 +234,10 @@
   z-index: 10 !important;
 }
 
-#jacks-app, #jacks-status {
+#jacks-app {
+  padding: 0px !important;
+}
+
+#jacks-status {
   padding: 5px 0px !important;
 }

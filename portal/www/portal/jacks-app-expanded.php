@@ -34,14 +34,14 @@ if (!isset($user) || is_null($user) || ! $user->isActive()) {
 
 setup_jacks_slice_context();
 
-echo '<html><body><meta charset="utf-8">';
-echo '<div id="content" >';
+// echo '<html><body><meta charset="utf-8">';
+// echo '<div id="content" >';
 
-echo "<link type='text/css' href='$portal_jqueryui_css_url' rel='stylesheet' />";
-echo '<link type="text/css" href="/common/css/portal.css" rel="Stylesheet"/>';
-echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,400italic|Droid+Sans+Mono" rel="stylesheet" type="text/css">';
-// echo '<script src="' . $jacks_stable_url . '"></script>';
-
+// echo "<link type='text/css' href='$portal_jqueryui_css_url' rel='stylesheet' />";
+// echo '<link type="text/css" href="/common/css/portal.css" rel="Stylesheet"/>';
+// echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+Serif:400,400italic|Droid+Sans+Mono" rel="stylesheet" type="text/css">';
+// // echo '<script src="' . $jacks_stable_url . '"></script>';
+show_header('GENI Portal: Dashboard', $TAB_HOME, true, true);
 
 ?>
 
@@ -110,11 +110,8 @@ echo '<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|PT+S
 
 
 <?php
-
-echo "<table style=\"margin-left: 0px;width:95%;height:20px\"><tr><th>Resources for Slice $slice_name</th></tr></table>";
-
-print "<table style=\"margin-left: 0px; width:95%; height:75%\" id='jacks-app'><tbody>";
-print "<tr><td><div id='jacks-app-container' style='width:100%; height:100%'>";
+echo "<div class='card' id='jacks-app' style='height:500px;'>";
+print "<div id='jacks-app-container' style='width:100%; height:100%'>";
 print build_jacks_viewer();
 
 ?>
@@ -143,7 +140,7 @@ $(document).ready(function() {
 
 <?php
 
-print "</div></td></tr></tbody></table>";
+print "</div>";
 
 echo '</div>';
 
